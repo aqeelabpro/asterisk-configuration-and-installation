@@ -6,7 +6,7 @@ Typically located in `/etc/asterisk/ari.conf`.
 [general]
 enabled = yes
 pretty = yes
-allowed_origins=http://ari.asterisk.org ; can be set to * to allow from any ip
+allowed_origins=http://ari.asterisk.org ; can be set to * to allow from any ip, if you set to * then create very strong password
 
 ;create a user in ari.conf
 [ari_user]
