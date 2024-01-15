@@ -7,7 +7,7 @@ apt -y install git curl wget libnewt-dev libssl-dev libncurses5-dev subversion l
 apt policy asterisk
 cd ~
 wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-20-current.tar.gz
-tar xvf asterisk-20-current
+tar xvf asterisk-20-current.tar.gz
 cd asterisk-20*/
 contrib/scripts/get_mp3_source.sh
 contrib/scripts/install_prereq install
