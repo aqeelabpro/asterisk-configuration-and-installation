@@ -1,3 +1,4 @@
+#!/bin/bash
 apt update
 apt -y upgrade
 apt update
@@ -13,7 +14,6 @@ contrib/scripts/install_prereq install
 ./configure
 make menuselect
 make
-
 make install
 make samples
 make config
@@ -38,4 +38,5 @@ systemctl restart asterisk
 systemctl enable asterisk
 systemctl status asterisk
 asterisk -rvv
+exit
 ufw allow proto tcp from any to any port 5060,5061

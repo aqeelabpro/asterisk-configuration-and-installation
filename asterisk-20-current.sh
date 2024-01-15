@@ -1,3 +1,4 @@
+#!/bin/bash
 apt update
 apt -y upgrade
 apt update
@@ -38,4 +39,5 @@ systemctl restart asterisk
 systemctl enable asterisk
 systemctl status asterisk
 asterisk -rvv
+exit
 ufw allow proto tcp from any to any port 5060,5061
