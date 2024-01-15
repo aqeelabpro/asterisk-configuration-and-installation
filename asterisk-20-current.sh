@@ -5,9 +5,9 @@ add-apt-repository universe
 apt -y install git curl wget libnewt-dev libssl-dev libncurses5-dev subversion libsqlite3-dev build-essential libjansson-dev libxml2-dev  uuid-dev
 apt policy asterisk
 cd ~
-wget https://downloads.asterisk.org/pub/telephony/asterisk/old-releases/asterisk-16.30.0.tar.gz
-tar xvf asterisk-16.30.0.tar.gz
-cd asterisk-16*/
+wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-20-current.tar.gz
+tar xvf asterisk-20-current
+cd asterisk-20*/
 contrib/scripts/get_mp3_source.sh
 contrib/scripts/install_prereq install
 ./configure
